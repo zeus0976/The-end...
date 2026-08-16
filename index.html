@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Down Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+        }
+
+        .section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .section:nth-child(1) {
+            background-color: #F5E6D3;
+        }
+
+        .section:nth-child(2) {
+            background-color: #D4A574;
+        }
+
+        .section:nth-child(3) {
+            background-color: #8B6F47;
+        }
+
+        .content {
+            color: #3E2723;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #F5E6D3;
+            color: #3E2723;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #D4A574;
+        }
+
+        .section-image {
+            max-width: 500px;
+            width: 90%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            animation: imageSlideIn 1s ease-out;
+        }
+
+        @keyframes imageSlideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <div class="content">
+            <h1>WECLOMEE ARIJJJJJJ🤍🤍🤍</h1>
+            <p>i wish u love my work for u babe</p>
+            <button onclick="document.querySelectorAll('.section')[1].scrollIntoView({behavior: 'smooth'})">
+                Next
+            </button>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="content">
+            <img src="hijabi.jpg" alt="hijabi pic" class="section-image">
+            <p>sadly we have only 1 pic while ur hijabi</p>
+            <button onclick="document.querySelectorAll('.section')[2].scrollIntoView({behavior: 'smooth'})">
+                Next
+            </button>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="content">
+            <p>im sry arij for my choice but it is the best for both of us,arij i really love u ya 5ra, bch n9olk 7aja, eli ana melli bdit n5mm fi situaion mt3na 7awelt netjanab choice hadha 9ad ma najam wallah ama seeing us fight over literaly anything really made me know that its gonna help both of us,ik its gonna hurt but its better than keep living together while we keeps hurting eachother,i really love you arij wallah la3dhim 3omri la 7abit 7ad 9adk 7atitk f top 3ndi yet i couldn't keep u jambi,ana metaked li bch nendem 3lih choice hadha ama za7 wallah la fama chy a5er najm na3mlou n7ebech nzid nrak mawjou3a akther meli enty deja mawjou3a i wished i can hear u saying that u love me ama njmtch its okay lmfid dhahartli li enty t7ebni w nchallah nkoun ana zeda waritk li ana n7ebek b actions mch just klem i know u love me arij<br><br>i love you too ma'lady🤍🤍</p>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                Back to Top
+            </button>
+        </div>
+    </section>
+</body>
+</html>
